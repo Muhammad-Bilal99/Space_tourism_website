@@ -19,6 +19,16 @@ nav {
 .logo {
   margin-left: 3%;
   margin-top: 3rem;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  flex-grow: 1;
+  background-color: #979797;
+  height: 1px;
+  margin-top: 3rem;
+  margin-inline: 5px;
 }
 
 nav ul {
@@ -27,14 +37,26 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  margin-right: 10%;
+  backdrop-filter: blur(15px);
+  padding-block: 2rem;
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  font-family:'Barlow Condensed', sans-serif;
+  padding-block: 32px;
+  transition: all 200ms ease-out;
 }
+
+nav ul li a:hover {
+  border-bottom: 2px solid #979797;
+}
+
 
 .nav-num {
   font-weight: 600;
@@ -42,7 +64,7 @@ nav ul li a {
 }
 
 .current-page {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .hero-container {
@@ -63,12 +85,23 @@ nav ul li a {
 
 .hero-text h1 {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 150px;
+  font-weight: 400;
+  font-family: 'Bellefair', serif;
+}
+
+.hero-text p {
+  line-height: 32px;
+  font-size: 18px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #D0D6F9;
 }
 
 .first-p {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #D0D6F9;
 }
 
 .explore {
@@ -81,10 +114,28 @@ nav ul li a {
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
-  color: rgba(0, 0, 0, 0.9);
   width: 12rem; height: 12rem;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 300ms ease-out;
+}
+
+.explore-container:hover {
+  outline: 40px solid rgb(151, 151, 151, 0.5);
+  transition: all 300ms ease-out;
+}
+
+.explore button {
+  background: transparent;
+  border: none;
+}
+
+.explore button a {
+  color: #0B0D17;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Bellefair', serif;
+  text-decoration: none;
 }
