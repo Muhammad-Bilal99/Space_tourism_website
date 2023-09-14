@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: url(/starter-code/assets/crew/background-crew-desktop.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 3%;
+  margin-top: 3rem;
+}
+
+.divider {
+  display: flex;
+  flex-grow: 1;
+  background-color: #979797;
+  height: 1px;
+  margin-top: 3rem;
+  margin-inline: 5px;
+}
+
+
+nav ul {
+  margin-top: 3rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  backdrop-filter: blur(15px);
+  padding-block: 2rem;
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family:'Barlow Condensed', sans-serif;
+  padding-block: 32px;
+  transition: all 200ms ease-in-out;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #979797;
+}
+
+.nav-num {
+  font-weight: 600;
+  margin-right: .5rem;
+}
+
+.current-page {
+  border-bottom: 2px solid #ffffff;
+}
+
+.pick-your-detination {
+  margin-left: 10%;
+  margin-top: 4rem;
+  font-family:'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.pick-your-detination span {
+  color: #3f3f3f;
+  font-weight: 700;
+}
+
+.hero-container {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 4rem;
+  margin-inline: 10%;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.crew-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.profession {
+  /* color: #ffffff; */
+  stroke: #000000;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'Bellefair', serif;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 56px;
+  font-family: 'Bellefair', serif;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+.crew-img {
+  background: url(/starter-code/assets/crew/image-douglas-hurley.webp) no-repeat;
+  background-size: contain;
+  background-position:bottom;
+}
