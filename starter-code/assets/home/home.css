@@ -72,6 +72,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 15rem;
+  margin-bottom: 5rem;
 }
 
 .hero-text {

@@ -131,6 +131,7 @@ nav ul li a:hover {
   margin-bottom: 2rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .description {
