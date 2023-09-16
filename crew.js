@@ -1,17 +1,22 @@
-// const data  = require('./data.json');
+
 
 const profession = document.querySelector('.profession');
 const name = document.querySelector('.name');
 const description = document.querySelector('.description');
-const image = document.querySelector('.crew-image');
+const image = document.getElementById('crew-image');
 const btn = document.getElementById('gg');
 
 btn.addEventListener('click', () => {
-  console.log('Hello');
-  name.textContent = "Mark Shuttleworth";
+ fetch('./data.json')
+ .then(res => res.json())
+ .then(data => {
+  console.log(data);
+  name.textContent = data.crew[1].name;
+  description.textContent = data.crew[1].bio;
+  image.style.background = url(data.crew[1].images.webp);
+ });
 })
 
-// console.log(JSON.stringify(data.crew[1].name));
 
 
 
