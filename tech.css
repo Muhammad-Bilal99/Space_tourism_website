@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   gap: 2rem;
   margin-top: 5rem;
   padding-bottom: 5rem;
@@ -171,5 +171,6 @@ nav ul li a:hover {
   bottom: 0;
   background: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg) no-repeat;
   background-size: contain;
+  mix-blend-mode: screen;
   height: 408px;width: 422px;
 }

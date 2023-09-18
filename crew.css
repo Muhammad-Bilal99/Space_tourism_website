@@ -9,6 +9,7 @@ body {
   background: url(/starter-code/assets/crew/background-crew-desktop.jpg) no-repeat;
   background-size: cover;
   color: white;
+  overflow-x: hidden;
 }
 
 nav {
@@ -80,12 +81,14 @@ nav ul li a:hover {
   font-weight: 700;
 }
 
+
 .hero-container {
   color: #ffffff;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 4rem;
   margin-inline: 10%;
+  width: 100vw;
 }
 
 .hero-text {
