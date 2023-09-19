@@ -69,6 +69,8 @@ nav ul li a:hover {
 }
 
 .pick-your-detination {
+  margin-left: 10%;
+  margin-top: 4rem;
   font-family:'Barlow Condensed', sans-serif;
   text-transform: uppercase;
   font-size: 28px;
@@ -104,10 +106,12 @@ nav ul li a:hover {
 }
 
 .profession {
-  stroke: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 32px;
   font-family: 'Bellefair', serif;
+  font-weight: 400;
+  opacity: 0.4994;
 }
 
 .name {
@@ -118,6 +122,7 @@ nav ul li a:hover {
 
 .description {
   line-height: 1.6;
+  color: #D0D6F9;
 }
 
 .btns {
@@ -152,4 +157,61 @@ nav ul li a:hover {
   background: url(/starter-code/assets/crew/image-douglas-hurley.webp) no-repeat;
   background-size: contain;
   background-position:bottom;
+}
+
+@media screen and (max-width:840px) {
+  body {
+    background: url(/starter-code/assets/crew/background-crew-tablet.jpg) no-repeat;
+  }
+  
+  nav ul {
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+    margin-top: 0;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .nav-num {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .pick-your-detination {
+    margin-left: 1rem;
+    font-size: 20px;
+  }
+
+  .hero-container {
+    grid-template-columns: 100%;
+    margin-top: 5rem;
+    gap: 0rem;
+    margin-inline: 0;
+  }
+
+  .hero-text {
+    margin-inline: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .crew-description-container {
+    align-items: center;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .crew-img {
+    height: 25rem;
+  }
 }

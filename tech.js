@@ -11,10 +11,10 @@ btnTwo.addEventListener('click', () => {
   .then(data => {
    name.textContent = data.technology[1].name;
    description.textContent = data.technology[1].description;
-   image.style.background = data.technology[1].images.portrait;
-   if (btnOne.id.contains("active-btn")) {
-     btnOne.id.remove('active-btn') && 
-     btnTwo.id.add('active-btn')
+   image.style.backgroundImage = `url(${data.technology[1].images.portrait})`;
+   if (btnOne.classList.contains("active-btn")) {
+     btnOne.classList.remove('active-btn') && 
+     btnTwo.classList.add('active-btn')
    }
   });
  })

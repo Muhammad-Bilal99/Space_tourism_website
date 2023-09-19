@@ -80,7 +80,9 @@ nav ul li a:hover {
   padding-inline-start: 10%;
 }
 
-.space-launch h1{
+.pick-your-detination {
+  margin-left: 10%;
+  margin-top: 4rem;
   font-family:'Barlow Condensed', sans-serif;
   text-transform: uppercase;
   font-size: 28px;
@@ -88,7 +90,7 @@ nav ul li a:hover {
   margin-bottom: 4rem;
 }
 
-.space-launch h1 span {
+.pick-your-detination span {
   color: #3f3f3f;
   font-weight: 700;
 }
@@ -169,8 +171,82 @@ nav ul li a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  background: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg) no-repeat;
+  background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
   background-size: contain;
   mix-blend-mode: screen;
   height: 408px;width: 422px;
+}
+
+@media screen and (max-width:840px) {
+  body {
+    background: url(/starter-code/assets/technology/background-technology-tablet.jpg) no-repeat;
+  }
+  
+  nav ul {
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+    margin-top: 0;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .nav-num {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .pick-your-detination {
+    margin-left: 1rem;
+    font-size: 20px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 0rem;
+    margin-inline: 0;
+  }
+
+  .text {
+    padding-inline: 10%;
+  }
+
+
+  .hero-text {
+    margin-inline: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .crew-description-container {
+    align-items: center;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .image-container{
+    height: 22rem;
+  }
+
+  .image {
+      position: none;
+      background-image: url(/starter-code/assets/technology/image-launch-vehicle-landscape.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      mix-blend-mode: screen;
+      /* height: 408px;width: 422px; */
+  }
 }
