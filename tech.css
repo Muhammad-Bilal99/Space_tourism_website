@@ -43,7 +43,7 @@ nav ul {
   padding-block: 2rem;
   padding-inline-start: 10%;
   padding-inline-end: 10%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 nav ul li a {
@@ -78,6 +78,7 @@ nav ul li a:hover {
 
 .text {
   padding-inline-start: 10%;
+  padding-block: 2rem;
 }
 
 .pick-your-detination {
@@ -177,9 +178,14 @@ nav ul li a:hover {
   height: 408px;width: 422px;
 }
 
+.hamburger {
+  display: none;
+}
+
 @media screen and (max-width:840px) {
   body {
     background: url(/starter-code/assets/technology/background-technology-tablet.jpg) no-repeat;
+    background-size: cover;
   }
   
   nav ul {
@@ -229,8 +235,10 @@ nav ul li a:hover {
     padding-bottom: 3rem;
   }
 
-  .crew-description-container {
+  .main-text {
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .name {
@@ -238,16 +246,23 @@ nav ul li a:hover {
   }
 
   .image-container{
-    height: 22rem;
+    height: 26rem;
+    width: 100%;
   }
 
   .image {
       position: none;
       background-image: url(/starter-code/assets/technology/image-launch-vehicle-landscape.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       mix-blend-mode: screen;
-      /* height: 408px;width: 422px; */
+      background-position: center;
+      width: 100%;
+      z-index: 2;
+  }
+
+  .btns {
+    flex-direction: row;
   }
 }
 
@@ -323,15 +338,37 @@ nav ul li a:hover {
     margin-top: 4rem;
   }
 
-  .profession {
-    font-size: 16px;
+  .image-container {
+    height: 12rem;
+    margin-top: 4rem;
   }
 
-  .name {
+  .main-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .btns {
+    flex-direction: row;
+  }
+
+  .btns button {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .terminology {
+    font-size: 14px;
+  }
+
+  .info h1 {
     font-size: 24px;
   }
 
-  .description p{
+  .description {
     font-size: 15px;
   }
 

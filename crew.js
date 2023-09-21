@@ -1,7 +1,7 @@
 const profession = document.querySelector('.profession');
 const name = document.querySelector('.name');
 const description = document.querySelector('.description');
-const image = document.getElementById('crew-image');
+const image = document.getElementById('crew-img');
 const btnTwo = document.getElementById('btnTwo');
 const btnOne = document.querySelector('.btnOne');
 const btnThree = document.getElementById('btnThree');
@@ -26,7 +26,7 @@ btnTwo.addEventListener('click', () => {
   console.log(data);
   name.textContent = data.crew[1].name;
   description.textContent = data.crew[1].bio;
-  image.style.background = `url(${data.crew[1].images.webp})`;
+  image.style.backgroundImage = `url(${data.crew[1].images.webp})`;
   if (btnOne.id.contains("active-btn")) {
     btnOne.id.remove('active-btn') && 
     btnTwo.id.add('active-btn')

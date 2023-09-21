@@ -8,6 +8,7 @@
 body {
   background: url(/starter-code/assets/crew/background-crew-desktop.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   overflow-x: hidden;
 }
@@ -43,7 +44,7 @@ nav ul {
   padding-block: 2rem;
   padding-inline-start: 10%;
   padding-inline-end: 10%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 nav ul li a {
@@ -139,6 +140,7 @@ nav ul li a:hover {
   border: none;
   border-radius: 50%;
   transition: all 100ms ease-out;
+  cursor: pointer;
 }
 
 .btns button:hover {
@@ -157,6 +159,10 @@ nav ul li a:hover {
   background: url(/starter-code/assets/crew/image-douglas-hurley.webp) no-repeat;
   background-size: contain;
   background-position:bottom;
+}
+
+.hamburger {
+  display: none;
 }
 
 @media screen and (max-width:840px) {
