@@ -331,13 +331,6 @@ nav ul li a:hover {
     margin-inline: 10%;
   }
 
-  nav ul {
-    display: none;
-    animation: none;
-    opacity: 1;
-    transform: translateX(0);
-  }
-
   .logo {
     margin-top: 3rem;
   }
@@ -360,15 +353,18 @@ nav ul li a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     width: 70vw;
     padding-block-start: 10rem;
     opacity: 0;
     transition: all 300ms ease-in-out ;
+    animation: none;
+    transform: translateX(10px);
   }
 
   .nav-active {
     opacity: 1;
+    height: 100vh;
   }
 
   .current-page {
