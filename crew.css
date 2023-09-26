@@ -199,7 +199,7 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
-#active-btn {
+.btns .active-btn {
   background-color: #ffffff;
 }
 
@@ -282,6 +282,8 @@ nav ul li a:hover {
 
   nav {
     margin-inline: 10%;
+    position: relative;
+    z-index: 3;
   }
 
   nav ul {
@@ -300,6 +302,7 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 30px;
     transition: all 200ms ease;
+    z-index: 5;
   }
 
   nav ul {
@@ -310,11 +313,14 @@ nav ul li a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     width: 70vw;
     padding-block-start: 10rem;
     opacity: 0;
     transition: all 300ms ease-in-out ;
+    transform: translateX(0);
+    animation: none;
+    margin-inline-end: -3rem;
   }
 
   .nav-active {
@@ -331,6 +337,8 @@ nav ul li a:hover {
 
   nav ul li a {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding-block: 1rem;
   }
 

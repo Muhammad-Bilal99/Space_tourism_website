@@ -2,10 +2,10 @@ const profession = document.querySelector('.profession');
 const name = document.querySelector('.name');
 const description = document.querySelector('.description');
 const image = document.getElementById('crew-img');
-const btnTwo = document.getElementById('btnTwo');
-const btnOne = document.querySelector('.btnOne');
-const btnThree = document.getElementById('btnThree');
-const btnFour = document.getElementById('btnFour');
+const btn2 = document.getElementById('btnTwo');
+const btn1 = document.querySelector('.btnOne');
+const btn3 = document.getElementById('btnThree');
+const btn4 = document.getElementById('btnFour');
 const hamburger = document.querySelector('.hamburger');
 const ul = document.getElementById('ul');
 
@@ -19,7 +19,7 @@ hamburger.addEventListener('click', () => {
   }
 });
 
-btnTwo.addEventListener('click', () => {
+btn2.addEventListener('click', () => {
  fetch('./data.json')
  .then(res => res.json())
  .then(data => {
@@ -27,25 +27,25 @@ btnTwo.addEventListener('click', () => {
   name.textContent = data.crew[1].name;
   description.textContent = data.crew[1].bio;
   image.style.background = 'url("/starter-code/assets/crew/image-mark-shuttleworth.webp") no-repeat';
-  if (btnOne.id.contains("active-btn")) {
-    btnOne.id.remove('active-btn') && 
-    btnTwo.id.add('active-btn')
-  }
- });
+  document.querySelector('.active-btn').classList.remove('active-btn');
+  btn2.classList.add('active-btn')
+});
 })
 
-btnThree.addEventListener('click', () => {
+btn3.addEventListener('click', () => {
  fetch('./data.json')
  .then(res => res.json())
  .then(data => {
   console.log(data);
   name.textContent = data.crew[2].name;
   description.textContent = data.crew[2].bio;
-  image.style.backgroundImage = 'url("/starter-code/assets/crew/image-victor-glover.webp") ';
+  image.style.backgroundImage = 'url("/starter-code/assets/crew/image-victor-glover.webp")';
+  document.querySelector('.active-btn').classList.remove('active-btn');
+  btn3.classList.add('active-btn')
  });
 })
 
-btnFour.addEventListener('click', () => {
+btn4.addEventListener('click', () => {
  fetch('./data.json')
  .then(res => res.json())
  .then(data => {
@@ -53,21 +53,23 @@ btnFour.addEventListener('click', () => {
   name.textContent = data.crew[3].name;
   description.textContent = data.crew[3].bio;
   image.style.backgroundImage = 'url("/starter-code/assets/crew/image-anousheh-ansari.webp")';
+  document.querySelector('.active-btn').classList.remove('active-btn');
+  btn4.classList.add('active-btn')
  });
 })
 
-btnOne.addEventListener('click', () => {
+btn1.addEventListener('click', () => {
  fetch('./data.json')
  .then(res => res.json())
  .then(data => {
   console.log(data);
   name.textContent = data.crew[0].name;
   description.textContent = data.crew[0].bio;
-  image.style.backgroundImage = 'url("/starter-code/assets/crew/image-douglas-hurley.webp")';
+  image.style.backgroundImage = 'url("/starter-code/assets/crew/image-douglas-hurley.webp") no-repeat';
+  document.querySelector('.active-btn').classList.remove('active-btn');
+  btn1.classList.add('active-btn')
  });
 })
-
-
 
 
 
