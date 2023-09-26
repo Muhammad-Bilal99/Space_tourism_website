@@ -15,7 +15,7 @@ const name = document.querySelector('.name');
 const description = document.querySelector('.description');
 const image = document.getElementById('image');
 const btnTwo = document.getElementById('btnTwo');
-const btnOne = document.querySelector('.btnOne');
+const btnOne = document.getElementById('btnOne');
 const btnThree = document.getElementById('btnThree');
 
 btnTwo.addEventListener('click', () => {
@@ -33,11 +33,9 @@ btnTwo.addEventListener('click', () => {
    }
    document.querySelector('.active-btn').classList.remove('active-btn');
    btnTwo.classList.add('active-btn')
-
   })
 })
   
-
 
 btnThree.addEventListener('click', () => {
   fetch('./data.json')
@@ -52,6 +50,8 @@ btnThree.addEventListener('click', () => {
    else{
     image.style.background = 'url("/starter-code/assets/technology/image-space-capsule-landscape.jpg") no-repeat';
    }
+   document.querySelector('.active-btn').classList.remove('active-btn');
+   btnThree.classList.add('active-btn')
   });
  })
 
@@ -69,7 +69,8 @@ btnOne.addEventListener('click', () => {
    else{
     image.style.background = 'url("/starter-code/assets/technology/image-launch-vehicle-landscape.jpg") no-repeat';
    }
-
+   document.querySelector('.active-btn').classList.remove('active-btn');
+   btnOne.classList.add('active-btn')
   });
  })
 
