@@ -364,5 +364,10 @@ nav ul li a:hover {
     font-size: 15px;
   }
 
+  #crew-img {
+    background-size: contain;
+    background-position: bottom center;
+  }
+
 }
 
