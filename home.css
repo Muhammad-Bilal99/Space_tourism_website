@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(background-home-desktop.jpg) no-repeat;
+  background: url(/starter-code/assets/home/background-home-desktop.jpg) no-repeat;
   height: 100%;
   background-size: cover;
   overflow-x: hidden;

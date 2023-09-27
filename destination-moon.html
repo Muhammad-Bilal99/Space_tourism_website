@@ -5,37 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="/starter-code/assets/destination/code/destination.css">
+  <link rel="stylesheet" href="/destination.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <script src="/nav.js" defer></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<style>
-  .image {
-  background: url(/starter-code/assets/destination/images/image-mars.png) no-repeat;
-  background-size: contain ;
-  background-position: center;
-}
-
-</style>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <a href="/starter-code/assets/home/home.html"><img src="/starter-code/logo.svg" alt=""></a>
+        <a href="/home.html"><img src="/starter-code/logo.svg" alt=""></a>
       </div>
       <div class="divider"></div>
-      <ul>
-        <li><a href="/starter-code/assets/home/home.html"><span class="nav-num">00</span>Home</a></li>
+      <ul id="ul">
+        <li><a href="/home.html"><span class="nav-num">00</span>Home</a></li>
         <li><a href="" class="current-page"><span class="nav-num">01</span>Destination</a></li>
         <li><a href="/crew.html"><span class="nav-num">02</span>Crew</a></li>
         <li><a href="/tech.html"><span class="nav-num">03</span>Technology</a></li>
       </ul>
       <div class="hamburger">
         <i class="fa-solid fa-bars"></i>
-      </div>
+       </div>
     </nav>
   </header>
 
@@ -47,33 +40,33 @@
       <div class="text">
         <div class="stars-nav">
           <ul>
-            <li><a href="/starter-code/assets/destination/code/destination-moon.html" >Moon</a></li>
-            <li><a href="" class="selected-star">Mars</a></li>
-            <li><a href="/starter-code/assets/destination/code/destination-europa.html">Europa</a></li>
-            <li><a href="/starter-code/assets/destination/code/destination-titan.html">Titan</a></li>
+            <li><a href="" class="selected-star">Moon</a></li>
+            <li><a href="/destination-mars.html">Mars</a></li>
+            <li><a href="/destination-europa.html">Europa</a></li>
+            <li><a href="/destination-titan.html">Titan</a></li>
           </ul>
         </div>
         <h1 class="star">
-          Mars
+          Moon
         </h1>
 
         <p class="description">
-          Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-          the tallest planetary mountain in our solar system. It’s two and a half times 
-          the size of Everest!
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites
         </p>
         <hr>
         <div class="time-distance">
           <div>
             <p>Avg. distance</p>
             <div class="value">
-              225 mil. km
+              384,400 km
             </div>
           </div>
           <div>
             <p>Est. travel time</p>
             <div class="value">
-              9 months
+              3 days
             </div>
           </div>
       </div>
